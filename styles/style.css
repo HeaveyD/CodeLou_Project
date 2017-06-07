@@ -32,15 +32,15 @@ h2 {
 
 .summary p{
   font-size: 16px;
-    text-shadow: 2px 2px 10px black;
+  text-shadow: 2px 2px 10px black;
   margin: 0px auto;
   max-width: 50em;
   max-height: 20em;
   overflow: scroll;
-    background-image: url("../photos/grizzly.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+  background-image: url("../photos/grizzly.jpg");
+  background-repeat: no-repeat;
+  background-position: center;;
+  background-size: 100%;
   background-color: gray;
   border: 5px double black;
   box-shadow: 0px 10px 9px black;
@@ -77,7 +77,7 @@ footer {
     list-style: none;
     display: inline-flex;
     flex-flow: row wrap;
-	padding-right: 2rem;
+  padding-right: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
 
@@ -89,6 +89,11 @@ footer {
  margin-top: 1.2rem;
  border: solid gray;
  box-shadow: 0px 5px 10px black;
+}
+
+.picGal {
+  margin: 0 auto;
+  padding-right: 25px
 }
 
 
@@ -169,7 +174,7 @@ nav ul{
 nav li {
     margin: 10px;
     padding-right: 50px;
-   	text-align: center;
+    text-align: center;
 
 }
 
@@ -253,3 +258,4 @@ nav a::after {
 }
 
 }
+
