@@ -1,0 +1,255 @@
+
+html {
+  font-size: 10px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.wrapper{
+    background-color: rgba(0, 0,0, 0.7);
+    height: 100%;
+}
+
+/********************BODY*********************/
+
+body {
+
+  background-color: #1DA996;
+  background-image: url("../photos/barkback.jpg");
+
+
+
+  color: #DFE3E6;
+    padding-top: 200px;
+    margin: 0 auto;
+  }
+
+h2 {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+
+}
+
+.summary p{
+  font-size: 16px;
+    text-shadow: 2px 2px 10px black;
+  margin: 0px auto;
+  max-width: 50em;
+  max-height: 20em;
+  overflow: scroll;
+    background-image: url("../photos/grizzly.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  background-color: gray;
+  border: 5px double black;
+  box-shadow: 0px 10px 9px black;
+}
+
+#overlay {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+display: none;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.498039)
+}
+
+#overlay img {
+  margin-top: 20%;
+  height: 400px;
+  width: 400px;
+}
+
+footer {
+  font-size: 1.2em;
+  background-color: gray;
+  padding: 10px;
+
+ }
+
+.imageGallery {
+    list-style: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+	padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+}
+
+.imageGallery img {
+ height: 250px;
+ width: 250px;
+ margin-top: 1.2rem;
+ border: solid gray;
+ box-shadow: 0px 5px 10px black;
+}
+
+
+
+/*******************HEADINGS******************/
+
+.heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  background-image: url("../photos/mount_hood.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: .9;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: solid 1px black;
+
+  }
+
+.heading h1 {
+    text-align: center;
+    font-size: 3rem;
+  color: #DFE3E6;
+  text-shadow: 2px 2px black;
+}
+
+
+
+.subheading {
+  font-size: 2.5em;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  text-align: center;
+
+}
+
+/***********images**********/
+
+#trail_map {
+  max-height:  75%;
+  max-width: 75%;
+    display: block;
+    margin: 0px auto;
+    box-shadow: 0px 5px 9px black;
+}
+
+
+#pct_logo {
+  max-height: 15em;
+  max-width: 15em;
+  margin: 0px auto;
+    display: block;
+    padding-bottom: 5px;
+
+}
+
+
+/*****links****/
+
+/*list for landmark websites*/
+
+nav {
+    display: block;
+    margin: 0px auto;
+    padding: 100px 50px;
+}
+
+
+nav ul{
+    font-size: 1.5em;
+    list-style: none;
+
+}
+
+nav li {
+    margin: 10px;
+    padding-right: 50px;
+   	text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+}
+
+nav a:hover {
+    color: rgb(186, 28, 255);
+    font-size: 1.5em;
+
+}
+
+/*THIS ADDS THE ORANGE BULLET MARKERS TO THE LEFT OF THE NAV LIST*/
+
+nav a::before {
+    content: "- -";
+    color: turquoise;
+    display: inline-block;
+    background: turquoise;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+nav a::after {
+    content: "- -";
+    color: turquoise;
+    display: inline-block;
+    background: turquoise;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+
+/*******Screen size******/
+
+@media (min-width: 760px) {
+
+    body {
+        background-color: black;
+    }
+
+    nav a {
+        color: white;
+    }
+
+
+    .heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  background-image: url("../photos/mount_hood.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: fill;
+  background-size: 100%;
+  opacity: .9;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: solid 1px black;
+}
+}
+
+@media (min-width: 1300px){
+
+  .wrapper {
+  background-color: rgba(0,0,0, 0.7);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+.imageGallery {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+}
