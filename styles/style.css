@@ -7,7 +7,7 @@ html {
 .wrapper{
     background-color: rgba(0, 0,0, 0.7);
     height: 100%;
-    padding: 20px;
+    
 }
 /*******************HEADER********************/
 
@@ -34,20 +34,19 @@ html {
 
 body {
 
-  background-color: #1DA996;
+  background-color: black;
   background-image: url("../photos/barkback.jpg");
-
-
-
+  background-attachment: fixed;
   color: #DFE3E6;
-    padding-top: 200px;
-    margin: 0 auto;
+  padding-top: 200px;
+  margin: 0 auto;
   }
 
 h2 {
     padding-right: 10px;
     padding-bottom: 10px;
     text-decoration: underline;
+    text-transform: uppercase;
 
 }
 
@@ -88,12 +87,6 @@ background-color: rgba(0, 0, 0, 0.498039)
   width: 400px;
 }
 
-footer {
-  font-size: 1.2em;
-  background-color: gray;
-  padding: 10px;
-
- }
 
 .imageGallery {
     list-style: none;
@@ -154,6 +147,35 @@ footer {
 
 }
 
+/************FOOTER**********/
+
+footer {
+  font-size: 1.2em;
+  background-color: rgba(0,0,0,0.7) ;
+  padding: 10px;
+  min-height: 100%;
+  width: 100%
+  margin-bottom: -20px; 
+
+ }
+
+footer ul {
+    padding: 0px;
+}
+
+
+.sociaLogo{
+    list-style: none;
+    display: inline-block;
+ }
+
+ .socialMed {
+   height: 50px;
+   width: 50px;
+   margin: 0 1em 0 0 ;
+   border-radius: 20px;
+ }
+
 /***********images**********/
 
 #trail_map {
@@ -161,7 +183,6 @@ footer {
   max-width: 75%;
     display: block;
     margin: 0px auto;
-    box-shadow: 0px 5px 9px black;
 }
 
 
@@ -169,8 +190,8 @@ footer {
   max-height: 15em;
   max-width: 15em;
   margin: 0px auto;
-    display: block;
-    padding-bottom: 5px;
+  display: block;
+  padding-bottom: 5px;
 
 }
 
@@ -201,7 +222,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: orange;
+    color: white;
 }
 
 nav a:hover {
@@ -253,21 +274,22 @@ nav a::after {
   background-position: center;
   background-size: fill;
   background-size: 100%;
-  opacity: .9;
   position: fixed;
   top: 0px;
   left: 0px;
   border-bottom: solid 1px black;
 }
+
 }
 
 @media (min-width: 1300px){
 
   .wrapper {
-  background-color: rgba(0,0,0, 0.7);
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+    background-color: rgba(0,0,0, 0.7);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 .imageGallery {
     list-style: none;
@@ -279,4 +301,8 @@ nav a::after {
 }
 
 }
+
+
+
+
 
