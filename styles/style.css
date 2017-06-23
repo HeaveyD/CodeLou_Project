@@ -15,7 +15,7 @@ html {
   content:"";
   display:block;
   height:100px; /* fixed header height*/
-  margin:100px 0 0; /* negative fixed header height */
+  margin:150px 0 0; /* negative fixed header height */
 }
 
 
@@ -198,10 +198,12 @@ footer ul {
 #trail_map {
   max-height:  75%;
   max-width: 75%;
-    display: block;
-    margin: 0px auto;
+    display: inline-block;
 }
 
+#map {
+  text-align: center;
+}
 
 #pct_logo {
   max-height: 15em;
@@ -323,6 +325,13 @@ nav a::after {
     height: 100%;
     padding-top: 200px;
     
+}
+
+.subheading:before {
+  content:"";
+  display:block;
+  height:100px; /* fixed header height*/
+  margin:100px 0 0; /* negative fixed header height */
 }
 
 }
