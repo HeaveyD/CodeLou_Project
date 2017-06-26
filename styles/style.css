@@ -25,6 +25,7 @@ html {
 
 .pageNav{
   padding-left: 0px;
+  font-family: 'Frijole', cursive;
 }
 
 .pNavigate {
@@ -41,6 +42,12 @@ html {
     text-transform: uppercase;
 }
 
+.pNavigate a:hover {
+  color: greenyellow;
+  text-shadow:2px 10px 10px black;
+  border-radius: 10%;
+}
+
 /*******************HEADINGS******************/
 
 header {
@@ -51,7 +58,6 @@ header {
   margin-bottom: 0px;
   width: 100%;
   background-image: url("../photos/mount_hood.jpg");
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,13 +78,12 @@ header {
 
 
 .subheading {
-  font-size: 2.5em;
-  margin-bottom: 0px;
+  font-size: 3.5em;
+  margin-bottom: 50px;
   padding-top: 40px;
   text-align: center;
 
 }
-
 
 /********************BODY*********************/
 
@@ -92,6 +97,7 @@ body {
   }
 
 h2 {
+    font-family: 'Anton', sans-serif;
     padding-right: 10px;
     padding-bottom: 10px;
     text-decoration: underline;
@@ -100,69 +106,17 @@ h2 {
 }
 
 .summary p{
-  font-size: 16px;
+  font-size: 2em;
   text-shadow: 2px 2px 10px black;
   margin: 0px auto;
-  max-width: 50em;
-  max-height: 20em;
-  overflow: scroll;
-  background-image: url("../photos/grizzly.jpg");
+  min-width: 50%;
+  min-height: 20%;
+  /*background-image: url("../photos/grizzly.jpg");*/
   background-repeat: no-repeat;
   background-position: center;;
   background-size: cover;
-  background-color: rgba(0,0,0,0.7);
-  border: 5px solid black;
-  box-shadow: 0px 10px 9px black;
   padding: 10px 15px 10px 15px;
 }
-
-#overlay {
-position: fixed;
-top: 0px;
-left: 0px;
-width: 100%;
-height: 100%;
-display: none;
-text-align: center;
-font-weight: bold;
-font-size: 20px;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.498039)
-}
-
-#overlay img {
-  margin-top: 20%;
-  height: 400px;
-  width: 400px;
-}
-
-
-.imageGallery {
-    list-style: none;
-    display: inline-flex;
-    flex-flow: row wrap;
-  padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-
-}
-
-.imageGallery img {
- height: 250px;
- width: 250px;
- margin-top: 1.2rem;
- border: solid gray;
- box-shadow: 0px 5px 10px black;
-}
-
-.picGal {
-  margin: 0 auto;
-  padding-right: 25px
-}
-
-
-
-
 
 /************FOOTER**********/
 
@@ -210,10 +164,77 @@ footer ul {
   max-width: 15em;
   margin: 0px auto;
   display: block;
+  padding-top: 10px;
   padding-bottom: 5px;
 
 }
 
+#overlay {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+display: none;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.498039)
+}
+
+#overlay img {
+  margin-top: 20%;
+  height: 350px;
+  width: 500px;
+}
+
+
+.imageGallery {
+    list-style: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding-right: 2rem;
+}
+
+.imageGallery img {
+ height: 250px;
+ width: 250px;
+ margin-top: 1.2rem;
+ border: solid gray;
+ box-shadow: 0px 5px 10px black;
+}
+
+.picGal {
+  margin: 0 auto;
+  padding-right: 25px
+}
+
+/*Picture in ABOUT THE TRAIL PARAGRAPH*/
+
+span .imageGallery {
+  padding: 0;
+}
+
+#grizzly{
+  height: 250px;
+  width: 400px;
+  margin-right: 10px;
+}
+
+span .brownie {
+    float: left;
+}
+
+#bear {
+  height: 250px;
+  width: 400px;
+  margin-left: 10px;
+}
+
+span .bearPortrait {
+    float: right;
+}
 
 /*****links****/
 
@@ -229,13 +250,16 @@ nav {
 nav ul{
     font-size: 1.5em;
     list-style: none;
+    margin-bottom: 10px;
+
 
 }
 
 nav li {
-    margin: 10px;
+    margin: 20px;
     padding-right: 50px;
     text-align: center;
+    font-size: 1.2em;
 
 }
 
@@ -245,8 +269,9 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(186, 28, 255);
-    font-size: 1.5em;
+    color: orangered;
+    text-transform: uppercase;
+    font-weight: bold;
 
 }
 
