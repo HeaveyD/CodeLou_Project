@@ -125,8 +125,7 @@ footer {
   background-color: rgba(0,0,0,0.7) ;
   padding: 10px;
   min-height: 100%;
-  width: 100%
-  margin-bottom: -20px; 
+  margin-top: 20px; 
 
  }
 
@@ -147,6 +146,9 @@ footer ul {
    border-radius: 20px;
  }
 
+.pageFoot{
+    text-align: center;
+}
 /***********images**********/
 
 #trail_map {
