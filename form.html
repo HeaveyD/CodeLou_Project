@@ -1,90 +1,66 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset= "utf-8">
-	<title>Email submit</title>
-	<style>
-	form {
-  
-  margin: 0 auto;
-  width: 400px;
-  
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
-}
-
-form div + div {
-  margin-top: 1em;
-}
-
-label {
-  
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-input, textarea {
- 
-  font: 1em sans-serif;
-
-  width: 300px;
-  box-sizing: border-box;
-
- 
-  border: 1px solid #999;
-}
-
-input:focus, textarea:focus {
- 
-  border-color: purple;
-}
-
-textarea {
-  
-  vertical-align: top;
-
- 
-  height: 5em;
-}
-
-.button {
-  padding-left: 90px; 
-}
-
-button {
- 
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-button:hover {
-	background-color: blue;
-	color: white;
-}
-
-	</style>
+    <meta charset= "utf-8">
+    <title>Email Submit Form</title>
+    <link rel= "stylesheet" href="styles/normalize.css">
+    <link rel= "stylesheet" href= "styles/style.css">
 </head>
 <body>
-	<form action="/my-handling-form-page" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail">
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
-</form>
-<div class="button">
-  <button type="submit">Send your message</button>
-</div>
+  <div class= "wrapper">
+    <form action= "form.html" method= "post"></form>
+      
+      <h1>Sign Up</h1>
+      <fieldset>
+        <legend>Your info</legend>
+        <label for= "name">Name:</label>
+        <input type= "text" id= "name" name= "user_name" placeholder="John Smith">
+        <label for= "mail">Email:</label>
+        <input type= "email" id= "mail" name= "user_email" placeholder="jsmith@email.com">
+      </fieldset>
+      
+      
+      <fieldset>
+        <legend>About you</legend>
+      <h3>Have an interesting PCT story to tell? Share your story with us.</h3>
+      <textarea type= "bio" placeholder="Enter your text here."></textarea>
+      
+      <h3>Planning a trip on the PCT? Tell us which month your leaving and we'll give you an estimated end date on when you may finish.</h3>
+      <label for= "season">Month</label>
+      <select id= "season" name= "departure_date">
+       <optgroup label="----Fall----">
+          <option value= "september">SEPTEMBER</option> 
+          <option value= "october">OCTOBER</option>
+          <option value= "november">NOVEMBER</option>
+       </optgroup> 
+       <optgroup label= "----Winter----"> 
+          <option value= "december">DECEMBER</option>
+          <option value= "january">JANUARY</option>
+          <option value= "february">FEBRUARY</option>
+       </optgroup> 
+       <optgroup label="----Spring----">
+          <option value= "march">MARCH</option>
+          <option value= "april">APRIL</option>
+          <option value= "may">MAY</option>
+       </optgroup>
+       <optgroup label= "----Summer----">
+          <option value= "june">JUNE</option>
+          <option value= "july">JULY</option>
+          <option value= "august">AUGUST</option>
+       </optgroup>
+      </select>
+      </fieldset>
+      <fieldset>
+        <legend>Other interests</legend>
+        <h3>Which of these trails are you also interested in?</h3>
+        
+        <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze">Appalachian Trail</label><br>
+        <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze">Continental Divide Trail</label><br>
+        <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze">American Discovery Trail</label><br>
+      </fieldset>
+      <button type= "submit">Submit</button> 
 
+
+  </div>
 </body>
 </html>
