@@ -216,7 +216,7 @@ background-color: rgba(0, 0, 0, 0.498039)
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /*the text-align below corrects an unkown responsive glitch on safari browser to align content properly*/
+  /*the text-align below corrects an unkown flexbox compatability issue with a screen size responsive glitch on safari browser to align content properly, the issue was specific to smaller screen sizes*/
   text-align: center;
 }
 
@@ -461,17 +461,18 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-#picGroup1 {
+#picGroup1, #picGroup2 {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
 }
 
-#picGroup2 {
-  display: flex;
-  flex-direction: row;
+/*****The css below was to correct issues with large screen sizes on FireFox and Chrome to offset the fix of an unknown flexbox compatibility issue for responsive the small screen size on Safari, the following css ******/
+.picGal {
   margin: 0 auto;
+  padding: 20px;
 }
+
 }
 
 
