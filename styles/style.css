@@ -80,7 +80,7 @@ header {
 .subheading {
   font-size: 3.5em;
   margin-bottom: 50px;
-  padding-top: 40px;
+  padding-top: 100px;
   text-align: center;
 
 }
@@ -194,9 +194,9 @@ background-color: rgba(0, 0, 0, 0.498039)
 
 .imageGallery {
     list-style: none;
-    display: inline-flex;
-    flex-flow: row wrap;
-    padding-right: 2rem;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
 }
 
 .imageGallery img {
@@ -208,8 +208,14 @@ background-color: rgba(0, 0, 0, 0.498039)
 }
 
 .picGal {
+  margin: 0px 10px 0px 10px;
+  padding-bottom: 20px;
+}
+
+#picGroup1, #picGroup2 {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  padding-right: 25px
 }
 
 /*Picture in ABOUT THE TRAIL PARAGRAPH*/
@@ -297,7 +303,61 @@ nav a::after {
     margin-left: 6px;
 }
 
+/************* FORM PAGE STYLING ***************/
+.returnHome {
+  margin-left: 50px;
+}
 
+.returnHome a {
+  color: white;
+  border: 2px solid;
+  padding: 5px;
+}
+
+legend {
+  font-size: 2.5em;
+  margin: 10px;
+  padding: 0 5px 0 5px;
+}
+
+fieldset {
+  margin: 50px auto;
+  border: 5px turquoise outset;
+  padding-bottom: 20px;
+  background-color: rgba(0,0,5, 0.7);
+  width: 75%;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+button {
+  font-size: 2em;
+  display: block;
+  margin: 50px auto;
+  color: white;
+  background-color: black;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#trailBlaze {
+  margin: 10px;
+  font-size: 100px;
+}
+
+#trailLabel, .userLabel {
+  font-size: 1.3em;
+}
 /*******Screen size******/
 
 @media (min-width: 760px) {
@@ -346,6 +406,28 @@ nav a::after {
     margin: 10px;
    
 }
+.imageGallery {
+  display: flex;
+  flex-direction: row;
+
+}
+#picGroup1 {
+  display: flex;
+  margin: 0 auto;
+}
+
+#picGroup2 {
+  display: flex;
+  margin: 0 auto;
+}
+.subheading {
+  font-size: 3.5em;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  text-align: center;
+
+}
+}
 /********General********/
 .wrapper{
     background-color: rgba(0, 0,0, 0.7);
@@ -361,7 +443,6 @@ nav a::after {
   margin:100px 0 0; /* negative fixed header height */
 }
 
-}
 
 @media (min-width: 1183px){
 
@@ -372,15 +453,23 @@ nav a::after {
     margin-right: 10%;
 }
 
-.imageGallery {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
+
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+}
+#picGroup1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
+#picGroup2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
 }
 
 

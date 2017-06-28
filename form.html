@@ -8,59 +8,80 @@
 </head>
 <body>
   <div class= "wrapper">
-    <form action= "form.html" method= "post"></form>
-      
+    <form action= "form.html" method= "post" id= "myForm">
+      <h2 class= "returnHome"><a href= "index.html">BACK TO MAIN PAGE</a></h2>
       <h1>Sign Up</h1>
-      <fieldset>
-        <legend>Your info</legend>
-        <label for= "name">Name:</label>
-        <input type= "text" id= "name" name= "user_name" placeholder="John Smith">
-        <label for= "mail">Email:</label>
-        <input type= "email" id= "mail" name= "user_email" placeholder="jsmith@email.com">
-      </fieldset>
-      
-      
-      <fieldset>
-        <legend>About you</legend>
+            <fieldset>
+              <legend>Your info</legend>
+              <label for= "name" class= "userLabel">Name:</label>
+              <input type= "text" id= "name" name= "user_name" placeholder="John Smith">
+              <label for= "mail" class= "userLabel">Email:</label>
+              <input type= "email" id= "mail" name= "user_email" placeholder="jsmith@email.com">
+            </fieldset>
+            
+            
+            <fieldset>
+              <legend>About you</legend>
       <h3>Have an interesting PCT story to tell? Share your story with us.</h3>
       <textarea type= "bio" placeholder="Enter your text here."></textarea>
       
       <h3>Planning a trip on the PCT? Tell us which month your leaving and we'll give you an estimated end date on when you may finish.</h3>
-      <label for= "season">Month</label>
-      <select id= "season" name= "departure_date">
-       <optgroup label="----Fall----">
-          <option value= "september">SEPTEMBER</option> 
-          <option value= "october">OCTOBER</option>
-          <option value= "november">NOVEMBER</option>
-       </optgroup> 
-       <optgroup label= "----Winter----"> 
-          <option value= "december">DECEMBER</option>
-          <option value= "january">JANUARY</option>
-          <option value= "february">FEBRUARY</option>
-       </optgroup> 
-       <optgroup label="----Spring----">
-          <option value= "march">MARCH</option>
-          <option value= "april">APRIL</option>
-          <option value= "may">MAY</option>
-       </optgroup>
-       <optgroup label= "----Summer----">
-          <option value= "june">JUNE</option>
-          <option value= "july">JULY</option>
-          <option value= "august">AUGUST</option>
-       </optgroup>
-      </select>
-      </fieldset>
-      <fieldset>
-        <legend>Other interests</legend>
-        <h3>Which of these trails are you also interested in?</h3>
-        
-        <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze">Appalachian Trail</label><br>
-        <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze">Continental Divide Trail</label><br>
-        <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze">American Discovery Trail</label><br>
-      </fieldset>
-      <button type= "submit">Submit</button> 
+            <label for= "season" class= "userLabel">Month:</label>
+            <select id= "season" name= "departure_date">
+            <optgroup label="----Fall----">
+                <option value= "september">SEPTEMBER</option> 
+                <option value= "october">OCTOBER</option>
+                <option value= "november">NOVEMBER</option>
+            </optgroup> 
+            <optgroup label= "----Winter----"> 
+                <option value= "december">DECEMBER</option>
+                <option value= "january">JANUARY</option>
+                <option value= "february">FEBRUARY</option>
+            </optgroup> 
+            <optgroup label="----Spring----">
+                <option value= "march">MARCH</option>
+                <option value= "april">APRIL</option>
+                <option value= "may">MAY</option>
+            </optgroup>
+            <optgroup label= "----Summer----">
+                <option value= "june">JUNE</option>
+                <option value= "july">JULY</option>
+                <option value= "august">AUGUST</option>
+            </optgroup>
+            </select>
+            </fieldset>
+            <fieldset>
+      <legend>Other interests</legend>
+      <h3>Which of these trails are you also interested in?</h3>
+      
+            <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze" id= "trailLabel">Appalachian Trail</label><br>
+            <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze" id= "trailLabel">Continental Divide Trail</label><br>
+            <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze" id= "trailLabel">American Discovery Trail</label><br>
+          </fieldset>
+          <button type= "submit" onclick= "formClear()" value= "Reset form">Submit</button> 
+      
+      
+      
+      <footer>
+			<div class= "pageFoot">
+			<h3>See what's happening on the trail.</h3>
+          <ul>
+            <li class= "sociaLogo"><a href= "https://www.facebook.com/PCTAFan/"><img src= "photos/facebook.jpg" class = "socialMed"alt= "facebook logo"></a></li>
+            
+            <li class= "sociaLogo"><a href="https://twitter.com/pctassociation?lang=en"><img src= "photos/Twitter_Logo_Blue.svg" class = "socialMed" alt= "twitter logo"></a></li>
+            
+            <li class= "sociaLogo"><a href="https://www.instagram.com/explore/tags/pct/?hl=en"><img src= "photos/instagram.jpg" class = "socialMed" alt= "instagram logo"></a></li>
+
+          </ul>
 
 
+          <p>To learn more about the P.C.T. visit the official website <a href="https://www.pcta.org"> here</a>.</p>
+		
+
+			</div>
+		  </footer>
+    </form>
   </div>
+  <script src= "scripts/pct_script.js"></script>
 </body>
 </html>

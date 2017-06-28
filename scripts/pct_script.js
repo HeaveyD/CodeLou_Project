@@ -81,4 +81,9 @@ $('a[href*= "#"]')
   });
 
 
- 
+ /*************************************This Script is for Form Submission***********/
+
+ function formClear(){
+    document.getElementById("myForm").reset();
+    alert("Thank you for taking the time to join our email list! We'll review your information and provide you with an estimated finish date and tailored resources that may be useful to help you plan your adventure. Happy hiking and adventure on!");
+ }
