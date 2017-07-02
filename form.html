@@ -11,12 +11,18 @@
     <form action= "form.html" method= "post" id= "myForm">
       <h2 class= "returnHome"><a href= "index.html">BACK TO MAIN PAGE</a></h2>
       <h1>Sign Up</h1>
-            <fieldset>
+            <fieldset >
               <legend>Your info</legend>
-              <label for= "name" class= "userLabel">Name:</label>
-              <input type= "text" id= "name" name= "user_name" placeholder="John Smith">
-              <label for= "mail" class= "userLabel">Email:</label>
-              <input type= "email" id= "mail" name= "user_email" placeholder="jsmith@email.com">
+              <div id = "containName">
+                <label for= "name" class= "userLabel userInfoName">Name:</label>
+                <input type= "text" class= "unserInfoName" id= "name" name= "user_name" placeholder="John Smith">
+              </div>
+              <div id= "containMail">
+                <label for= "mail" class= "userLabel userInfoMail">Email:</label>
+                <input type= "email"  class= "userInfoMail" id= "email-field" name= "user_email" placeholder="jsmith@gmail.com">
+                <!-- email validation text below this line -->
+                  <p class="validation-message" id="email-validation-message">Must be a valid email address.</p>
+              </div>
             </fieldset>
             
             
@@ -58,30 +64,34 @@
             <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze" id= "trailLabel">Continental Divide Trail</label><br>
             <input type= "checkbox" id= "trailBlaze" value= "interes_trails" name= "user_interest"><label for= "trailBlaze" id= "trailLabel">American Discovery Trail</label><br>
           </fieldset>
-          <button type= "submit" onclick= "formClear()" value= "Reset form">Submit</button> 
+          <button id= "form-submit" type= "submit" >Submit</button> 
       
       
       
       <footer>
-			<div class= "pageFoot">
-			<h3>See what's happening on the trail.</h3>
-          <ul>
-            <li class= "sociaLogo"><a href= "https://www.facebook.com/PCTAFan/"><img src= "photos/facebook.jpg" class = "socialMed"alt= "facebook logo"></a></li>
-            
-            <li class= "sociaLogo"><a href="https://twitter.com/pctassociation?lang=en"><img src= "photos/Twitter_Logo_Blue.svg" class = "socialMed" alt= "twitter logo"></a></li>
-            
-            <li class= "sociaLogo"><a href="https://www.instagram.com/explore/tags/pct/?hl=en"><img src= "photos/instagram.jpg" class = "socialMed" alt= "instagram logo"></a></li>
+        <div class= "pageFoot">
+          <h3 class= "footHead">See what's happening on the trail</h3>
+            <ul class= "footList">
+                <li class= "sociaLogo"><a href= "https://www.facebook.com/PCTAFan/"><img src= "photos/facebook.jpg" class = "socialMed"alt= "facebook logo"></a></li>
+                
+                <li class= "sociaLogo"><a href="https://twitter.com/pctassociation?lang=en"><img src= "photos/Twitter_Logo_Blue.svg" class = "socialMed" alt= "twitter logo"></a></li>
+                
+                <li class= "sociaLogo"><a href="https://www.instagram.com/explore/tags/pct/?hl=en"><img src= "photos/instagram.jpg" class = "socialMed" alt= "instagram logo"></a></li>
 
-          </ul>
+            </ul>
+                <div class= "footClan">
 
+                  <p>To learn more about the P.C.T. visit the official website <a href="https://www.pcta.org"> here</a>.</p>
+                  
 
-          <p>To learn more about the P.C.T. visit the official website <a href="https://www.pcta.org"> here</a>.</p>
-		
-
-			</div>
-		  </footer>
+                </div>
+        </div>
+      </footer>
     </form>
   </div>
+  
+    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+      <script src="scripts/pct_script.js"></script>
   <script src= "scripts/pct_script.js"></script>
 </body>
 </html>
