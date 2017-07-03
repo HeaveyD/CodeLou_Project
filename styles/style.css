@@ -107,8 +107,9 @@ h2 {
 
 .summary h3 {
   font-size: 3em;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: underline overline;
   font-weight: 400;
 }
 
@@ -263,35 +264,44 @@ span .bearPortrait {
 
 /*list for landmark websites*/
 
-nav {
+.siteSee {
     display: block;
     margin: 0px auto;
     min-width: 413px;
 }
 
 
-nav ul{
-    font-size: 1.5em;
+.siteSee ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
     list-style: none;
     margin-bottom: 10px;
-
-
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 460px;
+    max-width: 400px;
+    margin: auto;
+    border: 5px inset;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-nav li {
+.siteSee li {
     margin: 20px;
     padding-right: 50px;
     text-align: center;
     font-size: 1.2em;
+    font-family: 'Frijole', cursive;
 
 }
 
-nav a {
+.siteSee a {
     text-decoration: none;
     color: white;
 }
 
-nav a:hover {
+.siteSee a:hover {
     color: orangered;
     text-transform: uppercase;
     font-weight: bold;
@@ -300,8 +310,9 @@ nav a:hover {
 
 /*THIS ADDS THE BULLET MARKERS TO THE LEFT OF THE NAV LIST*/
 
-nav a::before {
+.siteSee a::before {
     content: "- -";
+    font-size: 8px;
     color: turquoise;
     display: inline-block;
     background: turquoise;
@@ -309,8 +320,9 @@ nav a::before {
     margin-right: 6px;
 }
 
-nav a::after {
+.siteSee a::after {
     content: "- -";
+    font-size: 8px;
     color: turquoise;
     display: inline-block;
     background: turquoise;
@@ -529,6 +541,7 @@ button:hover {
 }
 
 }
+
 
 
 
