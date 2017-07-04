@@ -31,6 +31,7 @@ html {
 .pNavigate {
     text-align: center;
     list-style: none;
+    padding: 5px;
     margin: 10px 0px 10px 0px;
 }
 
@@ -240,11 +241,12 @@ span .imageGallery {
   padding: 0;
 }
 
-#grizzly{
+#grizzly {
   height: 250px;
-  width: 400px;
+  min-width: 300px;
   margin: 20px 20px;
 }
+
 
 span .brownie {
     float: left;
@@ -252,7 +254,7 @@ span .brownie {
 
 #bear {
   height: 250px;
-  width: 400px;
+  min-width: 300px;
   margin: 20px 20px;
 }
 
@@ -267,7 +269,6 @@ span .bearPortrait {
 .siteSee {
     display: block;
     margin: 0px auto;
-    min-width: 413px;
 }
 
 
@@ -279,8 +280,8 @@ span .bearPortrait {
     margin-bottom: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
-    min-width: 460px;
-    max-width: 400px;
+    min-width: 30%;
+    max-width: 50%;
     margin: auto;
     border: 5px inset;
     border-radius: 20px;
@@ -292,6 +293,7 @@ span .bearPortrait {
     padding-right: 50px;
     text-align: center;
     font-size: 1.2em;
+    height: 25px;
     font-family: 'Frijole', cursive;
 
 }
@@ -308,27 +310,6 @@ span .bearPortrait {
 
 }
 
-/*THIS ADDS THE BULLET MARKERS TO THE LEFT OF THE NAV LIST*/
-
-.siteSee a::before {
-    content: "- -";
-    font-size: 8px;
-    color: turquoise;
-    display: inline-block;
-    background: turquoise;
-    border-radius: 50%;
-    margin-right: 6px;
-}
-
-.siteSee a::after {
-    content: "- -";
-    font-size: 8px;
-    color: turquoise;
-    display: inline-block;
-    background: turquoise;
-    border-radius: 50%;
-    margin-left: 6px;
-}
 
 /************* FORM PAGE STYLING ***************/
 .returnHome {
@@ -541,6 +522,7 @@ button:hover {
 }
 
 }
+
 
 
 
