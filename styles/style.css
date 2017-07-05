@@ -285,7 +285,8 @@ span .bearPortrait {
     margin: auto;
     border: 5px inset;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba( 10, 100, 100, 0.7);
+    text-shadow: 1px 1px 1px whitesmoke;
 }
 
 .siteSee li {
@@ -522,6 +523,7 @@ button:hover {
 }
 
 }
+
 
 
 
