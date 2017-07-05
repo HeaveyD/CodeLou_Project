@@ -393,7 +393,7 @@ button:hover {
 }
 /**********************************************************************Screen size******/
 
-@media (min-width: 855px) {
+@media (min-width: 890px) {
 
     body {
         background-color: black;
